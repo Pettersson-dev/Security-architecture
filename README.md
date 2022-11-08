@@ -147,8 +147,13 @@ Links
 
 ## Backend runtime
 
-## REST, SOAP, GRPC etc.
-### API
+## API - REST, SOAP, GRPC etc.
+* Log calls and standardise logging 
+* Use a positive security model and deny by default
+* Don't trust user input, have whitelists and disable insecure serializers.
+* Use API gateways to minimize attack surface and consolidate logging and traffic inspections.
+* Use TLS and consider mTLS for sensitive information.
+
 ## File transfer (FTP etc)
 
 ## Email
