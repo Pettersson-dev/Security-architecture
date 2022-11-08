@@ -145,8 +145,6 @@ Best practice
 Links
 * https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices
 
-## Backend runtime
-
 ## API - REST, SOAP, GRPC etc.
 * Log calls and standardise logging 
 * Use a positive security model and deny by default
@@ -155,7 +153,8 @@ Links
 * Use TLS and consider mTLS for sensitive information.
 
 ## File transfer (FTP etc)
-
+* Use sFTP
+* Encrypt and sign sensitive files 
 ## Email
 
 # HMI - Human to machine interaction
