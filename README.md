@@ -158,27 +158,25 @@ Interaction between machine, e.g IT software and hardware
 The user interface can either be graphical, mechanical etc. 
 
 ## Graphic user interface (GUI)
-GUI is an important contact surfade between user and machine.
-Principles
-* UI should minimize cognitive load 
-* Hide and disable functions that under isn't allowed to use
+GUI is an important contact surface between user and machine.
+
+Principles:
+* Don't trust user input
+* Minimize cognitive load
+* Hide and disable functions that user isn't allowed to use
 * Mask sensitive data
-* Allow copying but be careful
 * Use 4eyes principer to avoid human errors
 * Add verification steps avoid human errors
 
-### OS
-### Browser
- 
 ## USB 
-## Keyboard 
+## Keyboard  
 
 # HHI - Human to human interaction
 ## Voice 
 ## Mail
 # Runtime security
 
-Principles
+Principles 
 * Keep information on a neeed to know basis.
 * Clear secrets and prevent them from being shared or visible.
 * State should be immutable.
