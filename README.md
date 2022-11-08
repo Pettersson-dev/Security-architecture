@@ -154,8 +154,8 @@ Links
 ## Email
 
 # HMI - Human to machine interaction
-Interaction between machine, e.g IT software and hardware 
-The user interface can either be graphical, mechanical etc. 
+Interaction between machine, e.g IT software and hardware.
+The user interface can either be graphical, mechanical, sensors etc. 
 
 ## Graphic user interface (GUI)
 GUI is an important contact surface between user and machine.
@@ -166,14 +166,14 @@ Principles:
 * Hide and disable functions that user isn't allowed to use
 * Mask sensitive data
 * Use 4eyes principer to avoid human errors
-* Add verification steps avoid human errors
-
-## USB 
-## Keyboard  
+* Add verification steps avoid human errors 
 
 # HHI - Human to human interaction
-## Voice 
-## Mail
+Interaction between humans using voice, mail etc.
+Principles
+* Mind your surroundings
+* Share information on a needs to know basis
+
 # Runtime security
 
 Principles 
