@@ -147,15 +147,31 @@ Links
 
 
 ## REST, SOAP, GRPC etc.
-
+### API
 ## File transfer (FTP etc)
 
-##
+## Email
 
 # HMI - Human to machine interaction
 
-# HHI - Human to human interaction
+The user interface can either be graphical, mechanical etc. 
 
+## Graphic user interface (GUI)
+GUI is an important area in todays technical 
+* UI should minimize cognitive load 
+* Hide and disable functions that under isn't allowed to use
+* Mask sensitive data
+* Allow copying but be careful
+* Use 4eyes principer to avoid human errors
+* Add verification steps avoid human errors
+
+ 
+## USB 
+## Keyboard 
+
+# HHI - Human to human interaction
+## Voice 
+## Mail
 # Runtime security
 
 Principles
