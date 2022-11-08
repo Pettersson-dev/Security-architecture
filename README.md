@@ -145,6 +145,7 @@ Best practice
 Links
 * https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices
 
+## Backend runtime
 
 ## REST, SOAP, GRPC etc.
 ### API
@@ -153,11 +154,12 @@ Links
 ## Email
 
 # HMI - Human to machine interaction
-
+Interaction between machine, e.g IT software and hardware 
 The user interface can either be graphical, mechanical etc. 
 
 ## Graphic user interface (GUI)
-GUI is an important area in todays technical 
+GUI is an important contact surfade between user and machine.
+Principles
 * UI should minimize cognitive load 
 * Hide and disable functions that under isn't allowed to use
 * Mask sensitive data
@@ -165,6 +167,8 @@ GUI is an important area in todays technical
 * Use 4eyes principer to avoid human errors
 * Add verification steps avoid human errors
 
+### OS
+### Browser
  
 ## USB 
 ## Keyboard 
