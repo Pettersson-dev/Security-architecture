@@ -151,6 +151,17 @@ Links
 * Don't trust user input, have whitelists and disable insecure serializers.
 * Use API gateways to minimize attack surface and consolidate logging and traffic inspections.
 * Use TLS and consider mTLS for sensitive information.
+### Authentication
+* Check all possible ways to authenticate to all APIs
+* Use standard authentication, token generation, password storage,
+Multi-factor 
+* Use short-lived access tokens
+* Authenticate your apps (so you know who is talking to you)
+* Use stricter rate-limiting for authentication, implement lockout
+policies and weak password checks
+
+
+
 
 ## File transfer (FTP etc)
 * Use sFTP
