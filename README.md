@@ -185,7 +185,16 @@ debugging purposes, redact it partially.
 * Integrate with SIEMs and other dashboards, monitoring, alerting
 tools
 
-
+### Data exposure
+* Never rely on client to filter data
+* Review all responses and adapt responses to what the API
+consumers really need
+* Define schemas of all the API responses
+* Don’t forget about error responses
+* Identify all the sensitive or PII info and justify its use
+* Enforce response checks to prevent accidental data and exception
+leaks
+    
 ## File transfer (FTP etc)
 * Use sFTP
 * Encrypt and sign sensitive files 
