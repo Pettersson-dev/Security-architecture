@@ -171,15 +171,7 @@ access database
 * Log failed attempts, denied access, input validation failures, any failures in security policy 
 * Ensure that logs are formatted to be consumable by other tools
 * Protect logs as highly sensitive
-* Log failed attempts, denied access, input validation failures, any failures in security policy checks
-* Ensure that logs are formatted to be consumable by other tools
-* Protect logs as highly sensitive
 * Include enough detail to identify attackers
-* Avoid having sensitive data in logs - If you need the information for
-debugging purposes, redact it partially.
-* Integrate with SIEMs and other dashboards, monitoring, alerting
-tool
-*Include enough detail to identify attackers
 * Avoid having sensitive data in logs - If you need the information for
 debugging purposes, redact it partially.
 * Integrate with SIEMs and other dashboards, monitoring, alerting
@@ -199,6 +191,7 @@ leaks
 * Use sFTP
 * Encrypt and sign sensitive files 
 ## Email
+DMARC
 
 # HMI - Human to machine interaction
 Interaction between machine, e.g IT software and hardware.
