@@ -117,7 +117,7 @@ The domain name is the public identity of the server.
 
 Design
 * Use DNSsec for authenticating DNS records 
-* Consider HA over failiver
+* Consider HA over failover
 * Have zoning and multiple topologies
 
 ## TLS
@@ -146,6 +146,7 @@ Links
 * https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices
 
 ## API - REST, SOAP, GRPC etc.
+Principles:
 * Log calls and standardise logging 
 * Use a positive security model and deny by default
 * Don't trust user input, have whitelists and disable insecure serializers.
