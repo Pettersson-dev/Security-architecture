@@ -199,6 +199,9 @@ leaks
 * Use DMARC to prevent domain fraud.
 * Apply secure data transfer with trusted parties e.g setting up mtls 
 
+Links
+* https://explained-from-first-principles.com/email/
+
 # HMI - Human to machine interaction
 Interaction between machine, e.g IT software and hardware.
 The user interface can either be graphical, mechanical, sensors etc. 
