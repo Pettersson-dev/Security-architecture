@@ -173,7 +173,7 @@ access database
 * Ensure that logs are formatted to be consumable by other tools
 * Protect logs as highly sensitive
 * Include enough detail to identify attackers
-* Avoid having sensitive data in logs - If you need the information for
+* Avoid having sensitive data in logs - If you need the information for 
 debugging purposes, redact it partially.
 * Integrate with SIEMs and other dashboards, monitoring, alerting
 tools
@@ -191,12 +191,14 @@ leaks
 ## File transfer (FTP etc)
 * Use sFTP
 * Encrypt and sign sensitive files 
+
 ## Email
 * Avoid emails especially for sensitive information.
 * Educate users to create awareness of phishing and other types of treats 
 * Apply MFA to prevent account takeover
 * Use an email gateway that has Security capabilities usch as spam filtering and monitoring 
 * Use DMARC to prevent domain fraud.
+* Use TLS and DNS-based Authentication of Named Entities (DANE) for transport security.
 * Apply secure data transfer with trusted parties e.g setting up mtls 
 
 Links
