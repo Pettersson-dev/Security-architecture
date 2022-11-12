@@ -192,10 +192,12 @@ leaks
 * Use sFTP
 * Encrypt and sign sensitive files 
 ## Email
+* Avoid emails for sensitive information.
 * Educate users to create awareness of phishing and other types of treats 
 * Apply MFA to prevent account takeover
 * Use an email gateway that has Security capabilities usch as filtering, classification and monitoring 
 * Use DMARC to prevent domain fraud.
+* Apply secure data transfer with trusted parties e.g setting up mtls 
 
 # HMI - Human to machine interaction
 Interaction between machine, e.g IT software and hardware.
