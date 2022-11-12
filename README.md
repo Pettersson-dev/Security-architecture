@@ -189,14 +189,17 @@ consumers really need
 leaks
     
 ## File transfer (FTP etc)
-* Use sFTP
-* Encrypt and sign sensitive files 
+* Use sFTP with certificates.
+* Encrypt and sign sensitive files, exchange keys out of band.
+* Have strict access permissions.
+* Use disk rncryption
+* Logg activities
 
 ## Email
 * Avoid emails especially for sensitive information.
 * Educate users to create awareness of phishing and other types of treats 
 * Apply MFA to prevent account takeover
-* Use an email gateway that has Security capabilities usch as spam filtering and monitoring 
+* Use an email gateway that has Security capabilities usch as spam filtering, malware scanning and monitoring 
 * Use DMARC to prevent domain fraud.
 * Use TLS (StarTLS) and DNS-based Authentication of Named Entities (DANE) for transport security.
 * Apply secure data transfer with trusted parties e.g setting up S/MIME 
