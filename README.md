@@ -192,7 +192,10 @@ leaks
 * Use sFTP
 * Encrypt and sign sensitive files 
 ## Email
-DMARC
+* Educate users to create awareness of phishing and other types of treats 
+* Apply MFA to prevent account takeover
+* Use an email gateway that has Security capabilities usch as filtering, classification and monitoring 
+* Use DMARC to prevent domain fraud.
 
 # HMI - Human to machine interaction
 Interaction between machine, e.g IT software and hardware.
