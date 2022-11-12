@@ -199,7 +199,7 @@ leaks
 * Use an email gateway that has Security capabilities usch as spam filtering and monitoring 
 * Use DMARC to prevent domain fraud.
 * Use TLS (StarTLS) and DNS-based Authentication of Named Entities (DANE) for transport security.
-* Apply secure data transfer with trusted parties e.g settingg up SMIME 
+* Apply secure data transfer with trusted parties e.g setting up S/MIME 
 
 Links
 * https://explained-from-first-principles.com/email/
