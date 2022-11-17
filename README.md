@@ -1,4 +1,4 @@
-# Security architecture - Work in progress!
+# Security architecture
 A compiled list of information of security principles and solutions
 
 ## Cyber security
