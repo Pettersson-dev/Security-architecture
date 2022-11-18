@@ -228,7 +228,7 @@ Principles
 * Mind your surroundings
 * Share information on a needs to know basis
 
-# Runtime security
+# Machine security
 
  
 ## Application security principles
