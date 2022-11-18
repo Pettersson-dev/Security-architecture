@@ -257,14 +257,14 @@ Principles
 * Perform peer reviews
 
 ## Infrastructure security principles
+* Have an up to date inventory list
 * Have centralised logging and SIEM
-* Have a backup and recovery plan in place
-* Apply infrastructure as code with peer reviews
+* Have a backup and recovery plan in place that you regularly use
+* Apply infrastructure as code, with peer reviews
 * Automate infrastructure and use IAAS when possible
-* Apply organise and apply updates regularly
+* Apply organise and apply latest updates regularly and on demand
 * Prefer an immutable infrastructure approach over mutable, eg. patching, to avoid configuration drift and snowflake servers  
 * Use network zoning
-
 
 ## Clients
 ### Native clients
