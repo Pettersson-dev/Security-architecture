@@ -265,6 +265,7 @@ Principles
 * Prefer an immutable infrastructure aptroach and avoid snowflake servers  
 * Use network zoning
 
+
 ## Clients
 ### Native clients
 ### Browser
