@@ -262,7 +262,7 @@ Principles
 * Apply infrastructure as code with peer reviews
 * Automate infrastructure and use IAAS when possible
 * Apply organise and apply updates regularly
-* Prefer an immutable infrastructure aptroach and avoid snowflake servers  
+* Prefer an immutable infrastructure approach over mutable, eg. patching, to avoid configuration drift and snowflake servers  
 * Use network zoning
 
 
