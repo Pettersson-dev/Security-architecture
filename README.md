@@ -230,7 +230,19 @@ Principles
 
 # Runtime security
 
-Principles 
+ 
+## Application security principles
+Principles
+* Apply defense in depth
+* Use a positive security model (fail-safe defaults, minimize attack surface)
+* Fail securely
+* Run with least privilege
+* Avoid security by obscurity (open design)
+* Keep security simple (verifiable, economy of mechanism)
+* Detect intrusions (compromise recording)
+* Don’t trust infrastructure
+* Don’t trust services
+* Establish secure defaults (psychological acceptability)
 * Keep information on a neeed to know basis.
 * Clear secrets and prevent them from being shared or visible.
 * State should be immutable.
@@ -243,15 +255,6 @@ Principles
 * Don't log secrets
 * Have health checks and metrics
 * Perform peer reviews
-
-
-
-## Backend
-## Client
-### Browser
-HTTP headers:
-https://www.keycdn.com/blog/http-security-headers
-
 
 
 # Links
