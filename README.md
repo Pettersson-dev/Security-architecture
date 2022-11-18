@@ -259,9 +259,9 @@ Principles
 ## Infrastructure security principles
 * Have centralised logging and SIEM
 * Have a backup and recovery plan in place
+* Apply infrastructure as code with peer reviews
 * Automate infrastructure and use IAAS when possible
 * Apply organise and apply updates regularly
-* Apply infrastructure as code with peer reviews
 * Prefer an immutable infrastructure aptroach and avoid snowflake servers  
 * Use network zoning
 
