@@ -216,12 +216,7 @@ Principles
 * Be adaptable to individual need/preferences
 * Don't exclude people with special needs
 * Use standards usch as WCAG for usability
-* Don’t rely on technical knowledge on the user’s side
-
-## Graphic user interface (GUI)
-GUI is an important contact surface between user and machine.
-
-Principles:
+* Don’t rely on technical knowledge on the user’s 
 * Don't trust user input
 * Minimize cognitive load (visibility, constraints and affordance)
 * Hide and disable functions that user isn't allowed to use
