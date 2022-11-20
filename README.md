@@ -218,9 +218,9 @@ Principles
 * Share information on a needs to know basis
 * All communication should be equal
 * All communication should tell the same thing
-* Trust chain should be short, preferably first hand and direct
+* Trust chain should be short, preferably first hand
 * Use more trust anchors to verify information
-* Information should be complete with provided context to avoid missconceptions
+* Information should be complete, with provided context, to avoid missconceptions
 
 # Machine security
 
