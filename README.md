@@ -195,8 +195,7 @@ Links
 * https://explained-from-first-principles.com/email/
 
 # HMI - Human to machine interaction
-Interaction between machine, e.g IT software and hardware.
-The user interface can either be graphical, mechanical, sensors etc. 
+Human interaction with IT software and hardware. The user interface can either be graphical, mechanical, sensors etc.
 
 Principles 
 * Do not rely on human memory
