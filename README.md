@@ -221,9 +221,10 @@ Principles
 * Trust chain should be short, preferably first hand
 * Use more trust anchors to verify information
 * Information should be complete, with provided context, to avoid missconceptions
+* Non-public written information should be enveloped, or equally protected, in transport
+* Non-public written information should be locked in when not in use
 
 # Machine security
-
  
 ## Application security principles
 Principles
