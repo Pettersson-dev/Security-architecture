@@ -40,22 +40,9 @@ Damaged cause from one or more of the threat sources:
 * Hostile cyber or physical attacks
 * Human error
 * Structural failures of organization-controlled resources (e.g., hardware, software, environmental controls)  
-* Natural and man-made disasters, accidents, and failures beyond the control of the organization
-
-## Application security principles
-* Apply defense in depth
-* Use a positive security model (fail-safe defaults, minimize attack surface)
-* Fail securely
-* Run with least privilege
-* Avoid security by obscurity (open design)
-* Keep security simple (verifiable, economy of mechanism)
-* Detect intrusions (compromise recording)
-* Don’t trust infrastructure
-* Don’t trust services
-* Establish secure defaults (psychological acceptability)
+* Natural and man-made disasters, accidents, and failures beyond the control of the
 
 ## Secrets
-
 Types of Secrets
 * Password (all forms plain, hash etc)
 * Token (API-key, Session ID/key)
