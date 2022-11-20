@@ -214,7 +214,7 @@ Principles
 # HHI - Human to human interaction
 Interaction between humans using voice, mail etc.
 Principles
-* Mind your surroundings
+* Mind the surroundings, is the location safe?
 * Share information on a needs to know basis
 * All communication should be equal
 * All communication should tell the same thing
