@@ -179,7 +179,7 @@ leaks
 * Use sFTP with certificates.
 * Encrypt and sign sensitive files, exchange keys out of band.
 * Have strict access permissions.
-* Use disk rncryption
+* Use disk encryption
 * Logg activities
 
 ## Email
