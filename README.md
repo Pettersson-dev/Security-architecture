@@ -116,80 +116,80 @@ Trust anchors
 * CA (certificate authority).
 
 Weakness
-* Options, variants, versions and configurations
+* Options, variants, versions and configurations.
 
 Best practice
-* Always use TLS (almost always anyway)
-* Use secure protocols and ciphers
-* Use a public trusted CA
-* Secure the DNS (with DNSsec etc)
-* Use forward secrecy
-* Use full certificate chains
-* Strong private key
-* Secure private key
-* Disable insecure renegotiation
+* Always use TLS (almost always anyway).
+* Use secure protocols and ciphers.
+* Use a public trusted CA.
+* Secure the DNS (with DNSsec etc).
+* Use forward secrecy.
+* Use full certificate chains.
+* Strong private key.
+* Secure private key.
+* Disable insecure renegotiation.
 
 Links
 * https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices
 
 ## API - REST, SOAP, GRPC etc.
 Principles:
-* Log calls and standardise logging 
-* Use a positive security model and deny by default
+* Log calls and standardise logging.
+* Use a positive security model and deny by default.
 * Don't trust user input, have whitelists and disable insecure serializers.
 * Use API gateways to minimize attack surface and consolidate logging and traffic inspections.
 * Use TLS and consider mTLS for sensitive information.
 ### Authentication
-* Check all possible ways to authenticate to all APIs
+* Check all possible ways to authenticate to all APIs.
 * Use standard authentication, token generation, password storage,
-Multi-factor 
-* Use short-lived access tokens
-* Authenticate your apps (so you know who is talking to you)
+Multi-factor.
+* Use short-lived access tokens.
+* Authenticate your apps (so you know who is talking to you).
 * Use stricter rate-limiting for authentication, implement lockout
-policies and weak password checks
+policies and weak password checks.
 
 ### Authorization
 * Implement authorization checks with user policies and hierarchy • Don’t rely on IDs sent from client. Use IDs stored in the session
 object instead.
 * Check authorization each time there is a client request to
-access database
-* Use random non-guessable IDs (UUIDs)
+access database.
+* Use random non-guessable IDs (UUIDs).
 
 ### Logging 
-* Log failed attempts, denied access, input validation failures, any failures in security policy 
-* Ensure that logs are formatted to be consumable by other tools
-* Protect logs as highly sensitive
-* Include enough detail to identify attackers
+* Log failed attempts, denied access, input validation failures, any failures in security policy. 
+* Ensure that logs are formatted to be consumable by other tools.
+* Protect logs as highly sensitive.
+* Include enough detail to identify attackers.
 * Avoid having sensitive data in logs - If you need the information for 
 debugging purposes, redact it partially.
 * Integrate with SIEMs and other dashboards, monitoring, alerting
-tools
+tools.
 
 ### Data exposure
-* Never rely on client to filter data
+* Never rely on client to filter data.
 * Review all responses and adapt responses to what the API
-consumers really need
-* Define schemas of all the API responses
-* Don’t forget about error responses
-* Identify all the sensitive or PII info and justify its use
+consumers really need.
+* Define schemas of all the API responses.
+* Don’t forget about error responses.
+* Identify all the sensitive or PII info and justify its use.
 * Enforce response checks to prevent accidental data and exception
-leaks
+leaks.
     
 ## File transfer (FTP etc)
 * Use sFTP with certificates.
 * Encrypt and sign sensitive files, exchange keys out of band.
 * Have strict access permissions.
-* Use disk encryption
-* Logg activities
+* Use disk encryption.
+* Logg activities.
 
 ## Email
 * Avoid emails especially for sensitive information.
-* Educate users to create awareness of phishing and other types of treats 
-* Apply MFA to prevent account takeover
-* Use an email gateway that has Security capabilities usch as spam filtering, malware scanning and monitoring 
+* Educate users to create awareness of phishing and other types of treats.
+* Apply MFA to prevent account takeover.
+* Use an email gateway that has Security capabilities usch as spam filtering, malware scanning and monitoring. 
 * Use DMARC to prevent domain fraud.
 * Use TLS (StarTLS) and DNS-based Authentication of Named Entities (DANE) for transport security.
-* Apply secure data transfer with trusted parties e.g setting up S/MIME 
+* Apply secure data transfer with trusted parties e.g setting up S/MIME.
 
 Links
 * https://explained-from-first-principles.com/email/
@@ -198,70 +198,72 @@ Links
 Human interaction with IT software and hardware. The user interface can either be graphical, mechanical, sensors etc.
 
 Principles 
-* Do not rely on human memory
-* Be adaptable to individual need/preferences
-* Don't exclude people with special needs
-* Use standards usch as WCAG for usability
-* Don’t rely on technical knowledge on the user’s 
-* Don't trust user input
-* Minimize cognitive load (visibility, constraints and affordance)
-* Hide and disable functions that user isn't allowed to use
-* Mask sensitive data
-* Use 4eyes principer to avoid human errors
-* Add verification steps avoid human errors 
+* Do not rely on human memory.
+* Be adaptable to individual need/preferences.
+* Don't exclude people with special needs.
+* Use standards usch as WCAG for usability.
+* Don’t rely on technical knowledge on the user’s.
+* Don't trust user input.
+* Minimize cognitive load (visibility, constraints and affordance).
+* Hide and disable functions that user isn't allowed to use.
+* Mask sensitive data.
+* Use 4eyes principer to avoid human errors.
+* Add verification steps avoid human errors.
 
 # HHI - Human to human interaction
 
 Security in the interaction between humans using voice, mail etc.
 Principles
-* Verify that the information is safe to share
-* Verify the recipient, eg. is there trust
+* Verify that the information is safe to share.
+* Verify the recipient, eg. is there trust.
 * Mind the surroundings, is the location safe?
-* Share information on a needs to know basis
-* All communication should be equal
-* All communication should tell the same thing
-* Trust chain should be short, preferably first hand
-* Use more trust anchors to verify information
-* Information should be complete, with provided context, to avoid misconceptions
-* Non-public written information should be enveloped, or equally protected, in transport
-* Non-public written information should be locked in when not in use
+* Share information on a needs to know basis.
+* All communication should be equal.
+* All communication should tell the same thing.
+* Trust chain should be short, preferably first hand.
+* Use more trust anchors to verify information.
+* Information should be complete, with provided context, to avoid misconceptions.
+* Non-public written information should be enveloped, or equally protected, in transport.
+* Non-public written information should be locked in when not in use.
 
 # Machine security
  
 ## Application security principles
 Principles
-* Apply defense in depth
-* Use a positive security model (fail-safe defaults, minimize attack surface)
-* Fail securely
-* Run with least privilege
-* Avoid security by obscurity (open design)
-* Keep security simple (verifiable, economy of mechanism)
-* Detect intrusions (compromise recording)
-* Don’t trust infrastructure
-* Don’t trust services
-* Establish secure defaults (psychological acceptability)
+* Apply defense in depth.
+* Use a positive security model (fail-safe defaults, minimize attack surface).
+* Fail securely.
+* Run with least privilege.
+* Avoid security by obscurity (open design).
+* Keep security simple (verifiable, economy of mechanism).
+* Detect intrusions (compromise recording).
+* Don’t trust infrastructure.
+* Don’t trust services.
+* Establish secure defaults (psychological acceptability).
 * Keep information on a neeed to know basis.
 * Clear secrets and prevent them from being shared or visible.
 * State should be immutable.
 * State changes should be declarative.
-* Virtual machines should be avoided
-* Runtime should protect against overflows
+* Virtual machines should be avoided.
+* Runtime should protect against overflows.
 * Keep runtime up to date.
 * Avoid unnecessary logging. 
 * Mask or obfuscate sensitive information in logs.
-* Don't log secrets
-* Have health checks and metrics
-* Perform peer reviews
+* Don't log secrets.
+* Have health checks and metrics.
+* Perform peer reviews.
 
 ## Infrastructure security principles
-* Have an up to date inventory list
-* Have centralised logging and SIEM
-* Have a backup and recovery plan in place that you regularly use
-* Apply infrastructure as code, with peer reviews
-* Automate infrastructure and use IAAS when possible
-* Apply organise and apply latest updates regularly and on demand
+* Have an up to date inventory list of assets.
+* Have a strategy and organisation that can apply latest updates regularly and on demand.
+* Have centralised logging and SIEM.
+* Have a backup and recovery plan in place, make sure it is used and regularly tested.
+* Apply infrastructure as code and perform peer reviews.
+* Automate infrastructure and use IAAS when possible.
 * Prefer an immutable infrastructure approach over mutable, eg. patching, to avoid configuration drift and snowflake servers  
-* Use network zoning
+* Use network zoning.
+* Centralize identity and authorization management (IAM).
+* Separate internal and external users.
 
 ## Clients
 ### Native clients
