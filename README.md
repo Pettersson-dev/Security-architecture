@@ -256,7 +256,7 @@ Principles
 ## Infrastructure security principles
 * Have an up to date inventory list of assets.
 * Have a strategy and organisation that can apply latest updates regularly and on demand.
-* Have centralised logging and SIEM.
+* Centralize logging and SIEM.
 * Have a backup and recovery plan in place, make sure it is used and regularly tested.
 * Apply infrastructure as code and perform peer reviews.
 * Automate infrastructure and use IAAS when possible.
