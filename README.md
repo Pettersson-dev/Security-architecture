@@ -262,7 +262,7 @@ Principles
 * Automate infrastructure and use IAAS when possible.
 * Prefer an immutable infrastructure approach over mutable, eg. patching, to avoid configuration drift and snowflake servers  
 * Use network zoning.
-* Centralize identity and authorization management (IAM).
+* Centralize identity and access management (IAM).
 * Separate internal and external users.
 
 ## Clients
