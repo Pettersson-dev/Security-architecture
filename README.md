@@ -265,10 +265,5 @@ Principles
 * Centralize identity and access management (IAM).
 * Separate internal and external users.
 
-## Clients
-### Native clients
-### Browser
-
-
 # Links
 [DevSecOps](http://devsecops.github.io/)
