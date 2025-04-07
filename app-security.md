@@ -65,14 +65,11 @@ Application Security Reference Architecture.
 
 ## Perimeter Security Controls
 * Web Application Firewall (WAF)
-
-** Monitors HTTP requests to block known attack vectors (e.g., SQL injection, XSS).
+    * Monitors HTTP requests to block known attack vectors (e.g., SQL injection, XSS).
 * Firewall & Network ACLs
-
-** Restricts inbound/outbound traffic to approved ports, protocols, and IPs.
+    * Restricts inbound/outbound traffic to approved ports, protocols, and IPs.
 * Intrusion Detection/Prevention (IDS/IPS)
-
-** Detects or blocks malicious patterns and suspicious traffic at the network level.
+    * Detects or blocks malicious patterns and suspicious traffic at the network level.
 
 ## Security Operations & Monitoring
 * Security Information and Event Management (SIEM)
