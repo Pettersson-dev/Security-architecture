@@ -201,6 +201,4 @@ Integrate and automate security tests early in development to find vulnerabiliti
 	•	Zero Trust Principles
 Continuously authenticate and authorize every request, inside or outside the network perimeter.
 	•	Runtime Visibility
-Include mechanisms like RASP to add a real-time layer of application-awareness, but remember it’s just one part of a comprehensive strategy.
-
-By weaving security into each layer—perimeter, identity, application, data, infrastructure, and the CI/CD pipeline—you create a robust, adaptable architecture capable of defending against a wide range of threats.
+Include mechanisms like RASP to add a real-time layer of application-awareness, but remember it’s just one part of a comprehensive 
