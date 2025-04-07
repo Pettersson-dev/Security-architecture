@@ -73,111 +73,111 @@ Application Security Reference Architecture.
 
 ## Security Operations & Monitoring
 * Security Information and Event Management (SIEM)
-** Aggregates and correlates logs from across the environment for real-time analysis.
+    * Aggregates and correlates logs from across the environment for real-time analysis.
 * Security Operations Center (SOC)
-** Monitors alerts, investigates anomalies, and coordinates incident response.
+    * Monitors alerts, investigates anomalies, and coordinates incident response.
 * Threat Intelligence / Anomaly Detection
-** Identifies potential threats by analyzing indicators of compromise and behavioral anomalies.
+    * Identifies potential threats by analyzing indicators of compromise and behavioral anomalies.
 
 ## Application Delivery Layer
 * API Gateway
-** Central point for API traffic, handling authentication, rate limiting, and policy enforcement.
+    * Central point for API traffic, handling authentication, rate limiting, and policy enforcement.
 * Load Balancer
-** Distributes traffic across multiple servers or containers to improve availability.
+    * Distributes traffic across multiple servers or containers to improve availability.
 * Content Delivery Network (CDN)
-** Caches content at geographically distributed edge servers to reduce latency and add a layer of DDoS defense.
+    * Caches content at geographically distributed edge servers to reduce latency and add a layer of DDoS defense.
 * Reverse Proxy
-** Can terminate SSL/TLS and route internal requests, often adding caching or rewriting capabilities.
+    * Can terminate SSL/TLS and route internal requests, often adding caching or rewriting capabilities.
 
 ## Identity & Access Management (IAM) Layer
 * Authentication
-** Verifies user or service identity using credentials and (optionally) MFA.
+    * Verifies user or service identity using credentials and (optionally) MFA.
 * Authorization
-** Ensures each authenticated entity has the minimum privileges required (RBAC/ABAC).
+    * Ensures each authenticated entity has the minimum privileges required (RBAC/ABAC).
 * Single Sign-On (SSO)
-** Centralized login experience across multiple applications or services.
+    * Centralized login experience across multiple applications or services.
 * OAuth / OpenID Connect
-** Allows secure, delegated authorization and federated identity.
+    * Allows secure, delegated authorization and federated identity.
 * Session Management
-** Manages session tokens securely (e.g., rotation, expiration, invalidation).
+    * Manages session tokens securely (e.g., rotation, expiration, invalidation).
 
 ## Application Services & Business Logic
 * Secure Coding Practices
-** Follow guidelines to avoid common vulnerabilities (e.g., OWASP Top 10).
-** Employ thorough dependency scanning to eliminate known issues in third-party libraries.
+    * Follow guidelines to avoid common vulnerabilities (e.g., OWASP Top 10).
+    * Employ thorough dependency scanning to eliminate known issues in third-party libraries.
 * Input Validation & Output Encoding
-** Protects against XSS, injection, and other attacks by sanitizing data at boundaries.
+    * Protects against XSS, injection, and other attacks by sanitizing data at boundaries.
 * Business Logic Security
-** Ensures critical functions (e.g., financial transactions) have robust authorization, proper checks, and auditing.
+    * Ensures critical functions (e.g., financial transactions) have robust authorization, proper checks, and auditing.
 * Logging & Monitoring
-** Captures relevant application events and errors.
-** Integrates with SIEM for centralized analysis.
+    * Captures relevant application events and errors.
+    * Integrates with SIEM for centralized analysis.
 * Runtime Application Self-Protection (RASP)
-** Monitors application behavior in real-time.
-** Helps detect and block certain attacks by analyzing how the application processes requests.
+    * Monitors application behavior in real-time.
+    * Helps detect and block certain attacks by analyzing how the application processes requests.
 
 ## Data Management & Persistence
 * Databases & Data Stores
-** Encrypt data at rest and in transit (TLS).
-** Enforce strong authentication and least-privilege access.
+    * Encrypt data at rest and in transit (TLS).
+    * Enforce strong authentication and least-privilege access.
 * Secrets Management
-** Centralizes and secures API keys, credentials, and certificates (e.g., HashiCorp Vault or cloud provider secrets).
+    * Centralizes and secures API keys, credentials, and certificates (e.g., HashiCorp Vault or cloud provider secrets).
 * Database Activity Monitoring (DAM)
-** Tracks queries to detect unusual behaviors, unauthorized changes, or potential data exfiltration.
+    * Tracks queries to detect unusual behaviors, unauthorized changes, or potential data exfiltration.
 
 
 ## Infrastructure Layer
 * Host Security
-** Keep operating systems patched and hardened.
-** Minimize attack surface by disabling unnecessary services.
+    * Keep operating systems patched and hardened.
+    * Minimize attack surface by disabling unnecessary services.
 * Virtual Machines / Containers
-** Use minimal, secure base images and continuously scan for vulnerabilities.
-** Limit container privileges and isolate container workloads via proper configurations.
+    * Use minimal, secure base images and continuously scan for vulnerabilities.
+    * Limit container privileges and isolate container workloads via proper configurations.
 * Network Segmentation & Zero Trust
-** Restrict and isolate traffic between different tiers (web, app, database).
-** Authenticate and authorize all traffic, including internal requests.
+    * Restrict and isolate traffic between different tiers (web, app, database).
+    * Authenticate and authorize all traffic, including internal requests.
 * Kubernetes & Orchestrators (if applicable)
-** Protect the control plane (K8s API), enable RBAC, and use admission controllers to ensure secure deployments.
+    * Protect the control plane (K8s API), enable RBAC, and use admission controllers to ensure secure deployments.
 
 ## DevSecOps / CI/CD Pipeline
 * Static Application Security Testing (SAST)
-** Automatically scan source code for insecure patterns.
+    * Automatically scan source code for insecure patterns.
 * Dynamic Application Security Testing (DAST)
-** Tests live applications for exploitable vulnerabilities (XSS, SQL injection, etc.).
+    * Tests live applications for exploitable vulnerabilities (XSS, SQL injection, etc.).
 * Software Composition Analysis (SCA)
-** Identifies outdated or risky open-source components in your codebase.
+    * Identifies outdated or risky open-source components in your codebase.
 * Infrastructure as Code (IaC) Scanning
-** Checks Terraform, CloudFormation, and Kubernetes YAML files for misconfigurations.
+    * Checks Terraform, CloudFormation, and Kubernetes YAML files for misconfigurations.
 * Automated Security Testing
-** Integrates SAST, DAST, and SCA into the build pipeline to detect issues early and block insecure builds.
+    * Integrates SAST, DAST, and SCA into the build pipeline to detect issues early and block insecure builds.
 * Secure Build & Deploy
-** Enforces signed images, verifies artifact integrity, and secures the deployment environment.
+    * Enforces signed images, verifies artifact integrity, and secures the deployment environment.
 
 # Cross-Cutting Considerations
 * Logging & Auditing
-** Centralize logs from all layers (WAF, RASP, app, infrastructure).
-** Use tamper-evident storage for forensic analysis.
+    * Centralize logs from all layers (WAF, RASP, app, infrastructure).
+    * Use tamper-evident storage for forensic analysis.
 * Threat Modeling
-** Regularly identify high-value assets, likely threat actors, and potential vulnerabilities.
+    * Regularly identify high-value assets, likely threat actors, and potential vulnerabilities.
 * Incident Response & Forensics
-** Maintain a well-documented process for detection, containment, and recovery.
-** Practice tabletop exercises to validate readiness.
+    * Maintain a well-documented process for detection, containment, and recovery.
+    * Practice tabletop exercises to validate readiness.
 * Compliance & Governance
-** Align security controls with relevant standards (e.g., PCI DSS, SOC 2, HIPAA, GDPR).
-** Maintain documentation and evidence for audits.
+    * Align security controls with relevant standards (e.g., PCI DSS, SOC 2, HIPAA, GDPR).
+    * Maintain documentation and evidence for audits.
 * Security Training & Awareness
-** Conduct regular training for developers and operations teams on secure coding, threat modeling, and handling incidents.
-** Promote a culture of shared security responsibility.
+    * Conduct regular training for developers and operations teams on secure coding, threat modeling, and handling incidents.
+    * Promote a culture of shared security responsibility.
 
 
 # Key Takeaways
 * Defense in Depth
-** Layer multiple security controls so no single failure leads to compromise.
+    * Layer multiple security controls so no single failure leads to compromise.
 * Least Privilege
-** Restrict each service or user to the minimal access they need.
+    * Restrict each service or user to the minimal access they need.
 * Shift Left
-** Integrate and automate security tests early in development to find vulnerabilities sooner.
+    * Integrate and automate security tests early in development to find vulnerabilities sooner.
 * Zero Trust Principles
-** Continuously authenticate and authorize every request, inside or outside the network perimeter.
+    * Continuously authenticate and authorize every request, inside or outside the network perimeter.
 * Runtime Visibility
-** Include mechanisms like RASP to add a real-time layer of application-awareness, but remember it’s just one part of a comprehensive 
+    * Include mechanisms like RASP to add a real-time layer of application-awareness, but remember it’s just one part of a comprehensive 
