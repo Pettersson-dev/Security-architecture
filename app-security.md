@@ -57,7 +57,7 @@ Application Security Reference Architecture.
             |
             v
 +--------------------------------------------------------+
-|                DevSecOps / CI/CD Pipeline             |
+|                DevSecOps / CI/CD Pipeline              |
 |   (SAST, DAST, SCA, IaC Scanning)                      |
 |   - Automated Security Testing                         |
 |   - Secure Build & Deploy                              |
