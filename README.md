@@ -267,5 +267,5 @@ Principles
 * Separate internal and external users.
 
 # Links
-[DevSecOps](http://devsecops.github.io/)
-[Application security](app-security.md)
+* [DevSecOps](http://devsecops.github.io/)
+* [Application security](app-security.md)
