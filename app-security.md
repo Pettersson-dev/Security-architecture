@@ -1,7 +1,7 @@
 Application Security Reference Architecture.
 
 # High-Level Architecture Diagram
-
+'''
 +--------------------------+
 |   End Users / Clients    |
 +-----------+--------------+
@@ -60,7 +60,7 @@ Application Security Reference Architecture.
 |   - Automated Security Testing                         |
 |   - Secure Build & Deploy                              |
 +--------------------------------------------------------+
-
+'''
 # Layer-by-Layer Breakdown
 
 ## Perimeter Security Controls
